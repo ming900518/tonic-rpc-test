@@ -1,0 +1,14 @@
+syntax = "proto3";
+package service;
+
+service Apis {
+    rpc test (TestRequest) returns (TestResponse);
+}
+
+message TestRequest {
+    string value = 1;
+}
+
+message TestResponse {
+    string return_value = 1;
+}
